@@ -4,7 +4,7 @@ import { Blog } from "../models/blog.js";
 const rawData = getItemFromLocal(local_key.BLOGS);
 
 const blogs = rawData.map(
-  (item) => new Blog(item.id, item.title, item.author, item.content, item.time)
+  (item) => new Blog(item.title, item.author, item.time, item.content, item.image)
 );
 
 function createItem(data) {
@@ -51,6 +51,6 @@ if (addBtn) {
     data.push(newBlog);
 
     localStorage.setItem(local_key.BLOGS, JSON.stringify(data));
-    renderBlog(blogs);
+    renderBlog(data);
   });
 }
