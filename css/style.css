@@ -40,6 +40,7 @@ body {
   grid-template-columns: repeat(1, 6fr);
   gap: 20px;
   width: 800px;
+  height: 900px; /* Thêm chiều cao để kích hoạt scroll */
   padding: 0 40px 40px;
   margin: 0 auto;
   text-align: center;
