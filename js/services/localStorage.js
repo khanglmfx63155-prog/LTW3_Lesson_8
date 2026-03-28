@@ -1,7 +1,7 @@
 import { Blog } from "../models/blog.js";
 
 export const local_key = {
-  BLOGS: "blog_data",
+  BLOGS: "blog_data_v2",
 };
 
 const blog_data = [
@@ -10,14 +10,14 @@ const blog_data = [
     "Nam Cao",
     "1/2/2004",
     "Nước Ý là 1 nơi tuyệt vời nhất mà tôi đã từng đật chân tới",
-    "./asset/italy.jpg"
+    "./assets/italy.jpg"
   ),
   new Blog(
     "Nước Pháp thật Lãng mạn",
     "Văn Cao",
     "13/12/2024",
     "Nước Pháp là một đất nước lãng mạn nhất thế giới",
-    "./asset/france.jpg"
+    "./assets/france.jpg"
   ),
 
   new Blog(
@@ -25,7 +25,7 @@ const blog_data = [
     "Cao Cao",
     "13/11/2014",
     "Món gà KFC thật là ngon! Ăn rất là đã",
-    "./asset/kfc.jpg"
+    "./assets/kfc.jpg"
   ),
 ];
 
