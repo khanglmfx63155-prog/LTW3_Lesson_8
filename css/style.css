@@ -1,0 +1,64 @@
+img {
+  width: 350px;
+  height: 250px;
+}
+nav {
+  margin-top: 8px;
+  font-size: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-right: 15px;
+}
+
+nav a.active {
+  background: #b4b4b4;
+  color: #000000;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+header {
+  background: #333333;
+  color: white;
+  padding: 15px 30px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.nav_center_horizontal {
+  justify-self: center; /* Căn giữa item 2 trong cột của nó */
+}
+header h1 {
+  margin: 0;
+}
+body {
+  background-color: #f0f0f0;
+}
+#blog-container {
+  display: grid;
+  grid-template-columns: repeat(1, 6fr);
+  gap: 20px;
+  width: 800px;
+  padding: 0 40px 40px;
+  margin: 0 auto;
+  text-align: center;
+  border: 1.5px solid #e7e7e7 !important;
+  overflow-y: auto;
+  background: white !important;
+}
+
+.blog-item {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 15px;
+  text-align: left;
+}
+.author {
+  font-style: italic;
+  font-weight: bold;
+}
+
+.time {
+  font-style: italic;
+}
