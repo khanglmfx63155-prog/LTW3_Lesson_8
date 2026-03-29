@@ -47,11 +47,13 @@ body {
   border: 1.5px solid #e7e7e7 !important;
   overflow-y: auto;
   background: white !important;
+  margin-top: 30px;
 }
 
 .blog-item {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  border-bottom: 1.5px solid #e7e7e7 !important;
   padding: 15px;
   text-align: left;
 }
@@ -62,4 +64,46 @@ body {
 
 .time {
   font-style: italic;
+}
+.main-wrapper {
+  position: relative;
+  max-width: 850px; /* Độ rộng bằng với danh sách bài viết của bạn */
+  margin: 20px auto; /* Căn giữa màn hình */
+}
+
+/* 2. Dùng absolute để đưa nút lên trên cùng bên phải */
+.btn-edit {
+  position: absolute;
+  top: 15px; /* Cách mép trên 15px */
+  right: 20px; /* Cách mép phải 20px */
+
+  /* 3. z-index cực cao để luôn đè lên ảnh bài viết */
+  z-index: 9999;
+
+  /* Style cho đẹp giống mẫu */
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background: #eef7ff;
+  border: 1px solid #adc6ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+}
+
+.btn-edit:hover {
+  background-color: #d0e7ff;
+  transform: scale(1.1);
+}
+
+/* Đảm bảo khung chứa bài viết có nền trắng và đổ bóng như mẫu */
+#blog-container {
+  background-color: white;
+  padding: 30px 20px;
+  border-radius: 8px;
+  min-height: 500px;
+  border: 1px solid #eee;
 }
